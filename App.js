@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
-import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 export default function App() {
   const [result, setResult] = useState(0);
@@ -10,7 +10,6 @@ export default function App() {
   const [calculatedVal, setCalculatedVal] = useState(0);
 
   const generateNumber = () => {
-    // Fix: Generates a whole number between 100 and 999
     const generatedNumber = Math.floor(Math.random() * 900) + 100;
     setResult(generatedNumber);
 
